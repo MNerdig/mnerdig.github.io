@@ -16,15 +16,36 @@
     -o-background-size: cover;
     background-size: cover;
 }
+.br
+{
+    background: url('yakkinAnimal.gif') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;   
+}
 .contact{
     font-family: 'Comfortaa', cursive;
     margin-top: 10%;
     
     text-align: center
 }
+.poem1{
+        font-family: 'Comfortaa', cursive;
+        margin-top: 100%;
+        
+        text-align: left
+
+}
+.footer{
+    position:fixed;bottom:0;left:10px;right:0;height:30px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 12px;
+}
 a:link {
     color: black;
     text-decoration: none;
+    font-size: 25px
 }
 
 a:visited {
@@ -41,3 +62,75 @@ a:hover {
 a:active {
     text-decoration: none;
 } 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}.grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: stretch;
+    justify-items: center;
+    }
+  .grid img {
+    border: 3px solid black;
+    max-width: 100%;
+  }
+  /* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
